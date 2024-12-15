@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="acceuil_icon">
+            <span class="icon">&#8962;</span> 
+            Acceuil
+        </a>
+        <div class="navbar">
+            <a href="propos.html" title="A propos moi">A propos moi</a>
+            <a href="maitrise.html" title="Maitrise">Maitrise</a>
+            <a href="vie.html" title="Vie associative">Vie associative</a> 
+            <a href="contact.html" title="Contact">Contact</a>
+            <a href="#" title="Quiz">Quiz</a>
+        </div>
+    </header>
+    <main >
+        <h3 >Testez vos connaissances</h3>
+        <div class="quiz-container">
+            <!--qs1-->
+            <div class="question-container">
+                <h2>Quelle est la capitale de la France ?</h2>
+                <form id="quizForm1">
+                    <label>
+                        <input type="radio" name="answer1" value="Paris"> Paris
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer1" value="Berlin"> Berlin
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer1" value="Madrid"> Madrid
+                    </label><br><br>
+                    <button type="button" onclick="checkAnswer('answer1', 'Paris', 'result1')">Valider</button>
+                    <p id="result1"></p>
+                </form>
+            </div>
+            <hr>
+        
+            <!--qs2-->
+            <div class="question-container">
+                <h2>Qui a écrit "Les Misérables" ?</h2>
+                <form id="quizForm2">
+                    <label>
+                        <input type="radio" name="answer2" value="Victor Hugo"> Victor Hugo
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer2" value="Molière"> Molière
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer2" value="Émile Zola"> Émile Zola
+                    </label><br><br>
+                    <button type="button" onclick="checkAnswer('answer2', 'Victor Hugo', 'result2')">Valider</button>
+                    <p id="result2"></p>
+                </form>
+            </div>
+            <hr>
+    
+            <!--qs3-->
+            <div class="question-container">
+                <h2>Quelle est la plus grande planète du système solaire ?</h2>
+                <form id="quizForm3">
+                    <label>
+                        <input type="radio" name="answer3" value="Terre"> Terre
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer3" value="Jupiter"> Jupiter
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer3" value="Saturne"> Saturne
+                    </label><br><br>
+                    <button type="button" onclick="checkAnswer('answer3', 'Jupiter', 'result3')">Valider</button>
+                    <p id="result3"></p>
+                </form>
+            </div>
+            <hr>
+    
+            <!--qs4-->
+            <div class="question-container">
+                <h2>Quel est le symbole chimique de l'or ?</h2>
+                <form id="quizForm4">
+                    <label>
+                        <input type="radio" name="answer4" value="Au"> Au
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer4" value="Ag"> Ag
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer4" value="Pb"> Pb
+                    </label><br><br>
+                    <button type="button" onclick="checkAnswer('answer4', 'Au', 'result4')">Valider</button>
+                    <p id="result4"></p>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="../script.js"> </script>
+</body>
+</html>
