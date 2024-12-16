@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz HTML et CSS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,85 +20,222 @@
             <a href="#" title="Quiz">Quiz</a>
         </div>
     </header>
-    <main >
-        <h3 >Testez vos connaissances</h3>
+    <main>
+        <h3>Testez vos connaissances</h3>
         <div class="quiz-container">
+            
+
             <!--qs1-->
             <div class="question-container">
-                <h2>Quelle est la capitale de la France ?</h2>
-                <form id="quizForm1">
+                <h2>Quel attribut HTML est utilisé pour lier un fichier CSS à une page HTML ?</h2>
+                <form id="quizForm5">
                     <label>
-                        <input type="radio" name="answer1" value="Paris"> Paris
+                        <input type="radio" name="answer5" value="link"> <code>&lt;link&gt;</code>
                     </label><br>
                     <label>
-                        <input type="radio" name="answer1" value="Berlin"> Berlin
+                        <input type="radio" name="answer5" value="style"> <code>&lt;style&gt;</code>
                     </label><br>
                     <label>
-                        <input type="radio" name="answer1" value="Madrid"> Madrid
+                        <input type="radio" name="answer5" value="script"> <code>&lt;script&gt;</code>
                     </label><br><br>
-                    <button type="button" onclick="checkAnswer('answer1', 'Paris', 'result1')">Valider</button>
-                    <p id="result1"></p>
+                    <button type="button" onclick="checkAnswer('answer5', 'link', 'result5')">Valider</button>
+                    <p id="result5"></p>
                 </form>
             </div>
             <hr>
-        
+
             <!--qs2-->
             <div class="question-container">
-                <h2>Qui a écrit "Les Misérables" ?</h2>
-                <form id="quizForm2">
+                <h2>Quelle est la langue principale utilisée pour styliser une page web ?</h2>
+                <form id="quizForm6">
                     <label>
-                        <input type="radio" name="answer2" value="Victor Hugo"> Victor Hugo
+                        <input type="radio" name="answer6" value="CSS"> CSS
                     </label><br>
                     <label>
-                        <input type="radio" name="answer2" value="Molière"> Molière
+                        <input type="radio" name="answer6" value="JavaScript"> JavaScript
                     </label><br>
                     <label>
-                        <input type="radio" name="answer2" value="Émile Zola"> Émile Zola
+                        <input type="radio" name="answer6" value="HTML"> HTML
                     </label><br><br>
-                    <button type="button" onclick="checkAnswer('answer2', 'Victor Hugo', 'result2')">Valider</button>
-                    <p id="result2"></p>
+                    <button type="button" onclick="checkAnswer('answer6', 'CSS', 'result6')">Valider</button>
+                    <p id="result6"></p>
                 </form>
             </div>
             <hr>
-    
+
             <!--qs3-->
             <div class="question-container">
-                <h2>Quelle est la plus grande planète du système solaire ?</h2>
-                <form id="quizForm3">
+                <h2>Quel est l'élément HTML utilisé pour créer un lien hypertexte ?</h2>
+                <form id="quizForm7">
                     <label>
-                        <input type="radio" name="answer3" value="Terre"> Terre
+                        <input type="radio" name="answer7" value="a"> <code>&lt;a&gt;</code>
                     </label><br>
                     <label>
-                        <input type="radio" name="answer3" value="Jupiter"> Jupiter
+                        <input type="radio" name="answer7" value="button"> <code>&lt;button&gt;</code>
                     </label><br>
                     <label>
-                        <input type="radio" name="answer3" value="Saturne"> Saturne
+                        <input type="radio" name="answer7" value="div"> <code>&lt;div&gt;</code>
                     </label><br><br>
-                    <button type="button" onclick="checkAnswer('answer3', 'Jupiter', 'result3')">Valider</button>
-                    <p id="result3"></p>
+                    <button type="button" onclick="checkAnswer('answer7', 'a', 'result7')">Valider</button>
+                    <p id="result7"></p>
                 </form>
             </div>
             <hr>
-    
+
             <!--qs4-->
             <div class="question-container">
-                <h2>Quel est le symbole chimique de l'or ?</h2>
-                <form id="quizForm4">
+                <h2>Quel est le code couleur hexadécimal pour le rouge ?</h2>
+                <form id="quizForm8">
                     <label>
-                        <input type="radio" name="answer4" value="Au"> Au
+                        <input type="radio" name="answer8" value="#FF0000"> #FF0000
                     </label><br>
                     <label>
-                        <input type="radio" name="answer4" value="Ag"> Ag
+                        <input type="radio" name="answer8" value="#00FF00"> #00FF00
                     </label><br>
                     <label>
-                        <input type="radio" name="answer4" value="Pb"> Pb
+                        <input type="radio" name="answer8" value="#0000FF"> #0000FF
                     </label><br><br>
-                    <button type="button" onclick="checkAnswer('answer4', 'Au', 'result4')">Valider</button>
-                    <p id="result4"></p>
+                    <button type="button" onclick="checkAnswer('answer8', '#FF0000', 'result8')">Valider</button>
+                    <p id="result8"></p>
                 </form>
             </div>
+            <hr>
+
+            <!--qs5-->
+            <div class="question-container">
+                <h2>Comment est représentée une ligne horizontale en HTML ?</h2>
+                <form id="quizForm9">
+                    <label>
+                        <input type="radio" name="answer9" value="hr"> <code>&lt;hr&gt;</code>
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer9" value="line"> <code>&lt;line&gt;</code>
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer9" value="break"> <code>&lt;break&gt;</code>
+                    </label><br><br>
+                    <button type="button" onclick="checkAnswer('answer9', 'hr', 'result9')">Valider</button>
+                    <p id="result9"></p>
+                </form>
+            </div>
+            <hr>
+
+            <!--qs6-->
+            <div class="question-container">
+                <h2>Comment insérer une image en HTML ?</h2>
+                <form id="quizForm10">
+                    <label>
+                        <input type="radio" name="answer10" value="img"> <code>&lt;img&gt;</code>
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer10" value="image"> <code>&lt;image&gt;</code>
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer10" value="pic"> <code>&lt;pic&gt;</code>
+                    </label><br><br>
+                    <button type="button" onclick="checkAnswer('answer10', 'img', 'result10')">Valider</button>
+                    <p id="result10"></p>
+                </form>
+            </div>
+            <hr>
+
+            <!--qs7-->
+            <div class="question-container">
+                <h2>Quel est l'élément HTML utilisé pour les titres ?</h2>
+                <form id="quizForm11">
+                    <label>
+                        <input type="radio" name="answer11" value="h1"> <code>&lt;h1&gt;</code>
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer11" value="title"> <code>&lt;title&gt;</code>
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer11" value="header"> <code>&lt;header&gt;</code>
+                    </label><br><br>
+                    <button type="button" onclick="checkAnswer('answer11', 'h1', 'result11')">Valider</button>
+                    <p id="result11"></p>
+                </form>
+            </div>
+            <hr>
+
+            <!--qs8-->
+            <div class="question-container">
+                <h2>Quel élément HTML est utilisé pour créer une liste à puces ?</h2>
+                <form id="quizForm12">
+                    <label>
+                        <input type="radio" name="answer12" value="ul"> <code>&lt;ul&gt;</code>
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer12" value="ol"> <code>&lt;ol&gt;</code>
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer12" value="li"> <code>&lt;li&gt;</code>
+                    </label><br><br>
+                    <button type="button" onclick="checkAnswer('answer12', 'ul', 'result12')">Valider</button>
+                    <p id="result12"></p>
+                </form>
+            </div>
+            <hr>
+
+            <!--qs9-->
+            <div class="question-container">
+                <h2>Quel attribut HTML est utilisé pour spécifier la largeur d'une image ?</h2>
+                <form id="quizForm13">
+                    <label>
+                        <input type="radio" name="answer13" value="width"> width
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer13" value="height"> height
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer13" value="size"> size
+                    </label><br><br>
+                    <button type="button" onclick="checkAnswer('answer13', 'width', 'result13')">Valider</button>
+                    <p id="result13"></p>
+                </form>
+            </div>
+            <hr>
+
+            <!--qs10-->
+            <div class="question-container">
+                <h2>Quelle balise HTML est utilisée pour insérer un commentaire ?</h2>
+                <form id="quizForm14">
+                    <label>
+                        <input type="radio" name="answer14" value="<!-- -->"> <!-- -->
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer14" value="comment"> <code>&lt;comment&gt;</code>
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer14" value="notes"> <code>&lt;notes&gt;</code>
+                    </label><br><br>
+                    <button type="button" onclick="checkAnswer('answer14', '!-- -->', 'result14')">Valider</button>
+                    <p id="result14"></p>
+                </form>
+            </div>
+            <hr>
+
+            <!--qs11-->
+            <div class="question-container">
+                <h2>Quel élément est utilisé pour créer une table en HTML ?</h2>
+                <form id="quizForm15">
+                    <label>
+                        <input type="radio" name="answer15" value="table"> <code>&lt;table&gt;</code>
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer15" value="tab"> <code>&lt;tab&gt;</code>
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer15" value="tr"> <code>&lt;tr&gt;</code>
+                    </label><br><br>
+                    <button type="button" onclick="checkAnswer('answer15', 'table', 'result15')">Valider</button>
+                    <p id="result15"></p>
+                </form>
+            </div>
+            <hr>
         </div>
+        
     </main>
-    <script src="script.js"> </script>
+    <script src="script.js"></script>
 </body>
 </html>
